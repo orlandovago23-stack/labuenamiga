@@ -1,28 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>La Buena Miga</title>
+<title>P&R La Buena Miga</title>
+
 <style>
-body { font-family: Georgia, serif; background:#FFF8E7; color:#4A2F1B; text-align:center;}
-.card { background:#fffaf0; margin:20px auto; padding:20px; width:300px; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1);}
-button { background:#D2B48C; border:none; padding:10px; border-radius:8px; cursor:pointer;}
+body {
+  font-family: 'Georgia', serif;
+  background: #FDF6E3;
+  color: #4A2F1B;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  margin-top: 30px;
+  font-size: 40px;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+.card {
+  background: #FFF;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+button {
+  background: #D2A86C;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #b88b4f;
+}
 </style>
 </head>
-<body>
-<h1>P&R La Buena Miga</h1>
-<p>Pastelería artesanal</p>
 
+<body>
+
+<h1>P&R La Buena Miga</h1>
+<p>Pastelería artesanal elegante</p>
+
+<div class="container">
+
+<!-- RED VELVET -->
 <div class="card">
+<img src="https://raw.githubusercontent.com/orlandovago23-stack/labuenamiga/main/Red%20Velvet%20grande.jpeg">
 <h3>Red Velvet</h3>
-<p>C$1400</p>
-<a href="https://wa.me/50558300624"><button>Pedir</button></a>
+<p class="price">4oz C$600 • Media libra C$900 • 1 libra C$1400</p>
+<a href="https://wa.me/505558300624?text=Hola,%20quiero%20un%20Red%20Velvet">
+<button>Pedir</button>
+</a>
 </div>
 
+<!-- TIRAMISÚ -->
 <div class="card">
+<img src="https://raw.githubusercontent.com/orlandovago23-stack/labuenamiga/main/Tiramisú.jpeg">
 <h3>Tiramisú</h3>
-<p>C$70</p>
-<a href="https://wa.me/50558300624"><button>Pedir</button></a>
+<p class="price">C$70</p>
+<a href="https://wa.me/505558300624?text=Hola,%20quiero%20un%20Tiramisú">
+<button>Pedir</button>
+</a>
+</div>
+
+<!-- MINI PIE LIMÓN -->
+<div class="card">
+<img src="https://raw.githubusercontent.com/orlandovago23-stack/labuenamiga/main/Pie%20de%20limón%20pequeño.jpeg">
+<h3>Mini Pie de Limón</h3>
+<p class="price">C$70</p>
+<a href="https://wa.me/505558300624?text=Hola,%20quiero%20un%20mini%20pie%20de%20limón">
+<button>Pedir</button>
+</a>
+</div>
+
+<!-- BROWNIES -->
+<div class="card">
+<img src="https://raw.githubusercontent.com/orlandovago23-stack/labuenamiga/main/IMG-20260307-WA0026(1).jpg">
+<h3>Caja de Brownies</h3>
+<p class="price">C$650</p>
+<a href="https://wa.me/505558300624?text=Hola,%20quiero%20una%20caja%20de%20brownies">
+<button>Pedir</button>
+</a>
+</div>
+
 </div>
 
 </body>
