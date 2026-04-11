@@ -16,8 +16,10 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
-  background: #fff;
+  align-items: center;
+  padding: 20px 50px;
+  background: #fffaf0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 nav h2 {
@@ -25,33 +27,49 @@ nav h2 {
 }
 
 nav a {
-  margin-left: 20px;
+  margin-left: 25px;
   text-decoration: none;
   color: #4A2F1B;
   font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #D2A35C;
 }
 
 /* HERO */
 .hero {
   height: 80vh;
-  background: url('logo.png') center/contain no-repeat;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #8B5E3C;
+  background: #8B5E3C;
   color: white;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: url('logo.png') center/contain no-repeat;
+  opacity: 0.08;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero div {
-  background: rgba(0,0,0,0.5);
-  padding: 30px;
-  border-radius: 10px;
+  position: relative;
+  z-index: 2;
 }
 
 .hero h1 {
   font-size: 50px;
-  margin: 10px 0;
 }
 
 .hero button {
@@ -59,7 +77,6 @@ nav a {
   border: none;
   padding: 15px 30px;
   border-radius: 30px;
-  font-size: 18px;
   cursor: pointer;
 }
 
@@ -121,18 +138,17 @@ nav a {
 
 <body>
 
-<!-- NAV -->
 <nav>
   <h2>La Buena Miga</h2>
   <div>
     <a href="#">Inicio</a>
-    <a href="#">Catálogo</a>
-    <a href="#">Nosotros</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#">Sobre Nosotros</a>
+    <a href="#">Pedidos</a>
     <a href="#">Contacto</a>
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div>
     <p>PANADERÍA Y PASTELERÍA</p>
@@ -142,84 +158,74 @@ nav a {
   </div>
 </section>
 
-<!-- PRODUCTOS -->
 <section id="catalogo" class="productos">
 
-<!-- RED VELVET -->
 <div class="card">
 <img src="Red Velvet.jpeg">
 <h3>Red Velvet</h3>
-<p>Suave, húmedo y con un delicado toque de cacao, cubierto con frosting de queso crema.</p>
+<p>Bizcocho suave y aterciopelado con un toque de cacao y frosting de queso crema.</p>
 <p>4oz C$600 • Media libra C$900 • 1 libra C$1400</p>
 <a href="https://wa.me/50558300624"><button>Pedir</button></a>
 </div>
 
-<!-- TIRAMISÚ -->
 <div class="card">
 <img src="Tiramisú.jpeg">
 <h3>Tiramisú</h3>
-<p>Clásico italiano con café, crema suave y cacao espolvoreado.</p>
+<p>Postre italiano con café, crema suave y cacao.</p>
 <p>C$70</p>
 <a href="https://wa.me/50558300624"><button>Pedir</button></a>
 </div>
 
-<!-- PIE LIMÓN -->
 <div class="card">
 <img src="Pie de limón pequeño.jpeg">
 <h3>Mini Pie de Limón</h3>
-<p>Base crujiente, relleno cítrico y topping cremoso irresistible.</p>
+<p>Relleno cítrico con base crujiente y topping cremoso.</p>
 <p>C$70</p>
 <a href="https://wa.me/50558300624"><button>Pedir</button></a>
 </div>
 
-<!-- BROWNIES -->
 <div class="card">
 <img src="IMG-20260307-WA0026(1).jpg">
 <h3>Caja de Brownies</h3>
-<p>Brownies intensos de chocolate, suaves por dentro y llenos de sabor.</p>
+<p>Brownies intensos de chocolate, suaves por dentro.</p>
 <p>C$650</p>
 <a href="https://wa.me/50558300624"><button>Pedir</button></a>
 </div>
 
-<!-- CHOCOFLAN -->
 <div class="card">
 <img src="Chocoflan.jpeg">
 <h3>Chocoflan</h3>
-<p>Perfecta mezcla de flan suave y pastel de chocolate.</p>
+<p>Combinación perfecta de flan y pastel de chocolate.</p>
 <p>C$500</p>
 <a href="https://wa.me/50558300624"><button>Pedir</button></a>
 </div>
 
-<!-- MINI CHOCOFLAN -->
 <div class="card">
 <img src="Mini chocoflan.jpeg">
 <h3>Mini Chocoflan</h3>
-<p>Versión individual de nuestro clásico chocoflan.</p>
+<p>Versión individual del clásico chocoflan.</p>
 <p>C$50</p>
 <a href="https://wa.me/50558300624"><button>Pedir</button></a>
 </div>
 
-<!-- FLAN -->
 <div class="card">
 <img src="Flan tradicional.jpeg">
 <h3>Flan Tradicional</h3>
-<p>Textura cremosa con caramelo dulce irresistible.</p>
+<p>Textura cremosa con caramelo suave.</p>
 <p>C$500</p>
 <a href="https://wa.me/50558300624"><button>Pedir</button></a>
 </div>
 
-<!-- PASTEL RECTANGULAR -->
 <div class="card">
 <img src="Pastelrectangular.jpeg">
 <h3>Pastel Rectangular</h3>
-<p>Ideal para celebraciones, disponible en vainilla o chocolate.</p>
+<p>Perfecto para eventos, disponible en vainilla o chocolate.</p>
 <p>C$1500</p>
 <a href="https://wa.me/50558300624"><button>Pedir</button></a>
 </div>
 
 </section>
 
-<!-- BOTÓN WHATSAPP -->
 <a class="whatsapp" href="https://wa.me/50558300624">💬</a>
 
 </body>
