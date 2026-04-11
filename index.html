@@ -14,12 +14,24 @@ body {
   margin: 0;
 }
 
+/* LOGO FONDO */
+.logo-bg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.05;
+  width: 400px;
+  z-index: -1;
+}
+
+/* ENCABEZADO */
 h1 {
   margin-top: 30px;
   font-size: 42px;
 }
 
-p {
+p.sub {
   margin-bottom: 30px;
 }
 
@@ -39,9 +51,12 @@ p {
   border-radius: 20px;
   padding: 15px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #D2A46C;
 }
 
-/* IMÁGENES */
 .card img {
   width: 100%;
   border-radius: 15px;
@@ -62,13 +77,28 @@ button:hover {
   background: #b88a55;
 }
 
+/* SECCIÓN COMENTARIOS */
+.comentarios {
+  margin: 50px 20px;
+}
+
+textarea {
+  width: 80%;
+  height: 80px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 </style>
 </head>
 
 <body>
 
+<!-- LOGO -->
+<img src="logo.png" class="logo-bg">
+
 <h1>P&R La Buena Miga</h1>
-<p>Pastelería artesanal</p>
+<p class="sub">Pastelería artesanal</p>
 
 <div class="contenedor">
 
@@ -76,90 +106,64 @@ button:hover {
 <div class="card">
 <img src="Red Velvet.jpeg">
 <h3>Red Velvet</h3>
-<p>4oz C$600 • Media libra C$900 • 1 libra C$1400</p>
-<a href="https://wa.me/50558300624"><button>Pedir</button></a>
+<p>Suave bizcocho de cacao con un vibrante tono rojo, relleno y cubierto con delicada crema de queso. Perfecto para celebraciones especiales.</p>
+<p><b>4oz C$600 • Media libra C$900 • 1 libra C$1400</b></p>
+<a href="https://wa.me/50558300624?text=Hola,%20quiero%20ordenar%20Red%20Velvet"><button>Pedir</button></a>
 </div>
 
 <!-- TIRAMISÚ -->
 <div class="card">
 <img src="Tiramisú.jpeg">
 <h3>Tiramisú</h3>
-<p>C$70</p>
-<a href="https://wa.me/50558300624"><button>Pedir</button></a>
+<p>Postre italiano con capas de bizcocho húmedo en café, crema suave y un toque de cacao que se derrite en el paladar.</p>
+<p><b>C$70</b></p>
+<a href="https://wa.me/50558300624?text=Hola,%20quiero%20ordenar%20Tiramisu"><button>Pedir</button></a>
 </div>
 
 <!-- MINI PIE -->
 <div class="card">
 <img src="Pie de limón pequeño.jpeg">
 <h3>Mini Pie de Limón</h3>
-<p>C$70</p>
-<a href="https://wa.me/50558300624"><button>Pedir</button></a>
+<p>Base crujiente con relleno cremoso de limón y un toque de merengue tostado que equilibra lo dulce y ácido.</p>
+<p><b>C$70</b></p>
+<a href="https://wa.me/50558300624?text=Hola,%20quiero%20ordenar%20Mini%20Pie"><button>Pedir</button></a>
 </div>
 
 <!-- BROWNIES -->
 <div class="card">
 <img src="IMG-20260307-WA0026(1).jpg">
 <h3>Caja de Brownies</h3>
-<p>C$650</p>
-<a href="https://wa.me/50558300624"><button>Pedir</button></a>
+<p>Brownies intensos de chocolate, húmedos por dentro y con toppings irresistibles. Ideales para compartir.</p>
+<p><b>C$650</b></p>
+<a href="https://wa.me/50558300624?text=Hola,%20quiero%20ordenar%20Brownies"><button>Pedir</button></a>
 </div>
 
 <!-- CHOCOFLAN -->
 <div class="card">
 <img src="Chocoflan.jpeg">
 <h3>Chocoflan</h3>
-<p>C$500</p>
-<a href="https://wa.me/50558300624"><button>Pedir</button></a>
+<p>La mezcla perfecta entre flan cremoso y pastel de chocolate, con una capa suave de caramelo.</p>
+<p><b>C$500</b></p>
+<a href="https://wa.me/50558300624?text=Hola,%20quiero%20ordenar%20Chocoflan"><button>Pedir</button></a>
 </div>
 
 <!-- MINI CHOCOFLAN -->
 <div class="card">
 <img src="Mini chocoflan .jpeg">
 <h3>Mini Chocoflan</h3>
-<p>C$50</p>
-<a href="https://wa.me/50558300624"><button>Pedir</button></a>
+<p>Versión individual del clásico chocoflan, ideal para disfrutar en cualquier momento.</p>
+<p><b>C$50</b></p>
+<a href="https://wa.me/50558300624?text=Hola,%20quiero%20ordenar%20Mini%20Chocoflan"><button>Pedir</button></a>
 </div>
 
-<!-- FLAN -->
-<div class="card">
-<img src="Flan tradicional.jpeg">
-<h3>Flan Tradicional</h3>
-<p>C$500</p>
-<a href="https://wa.me/50558300624"><button>Pedir</button></a>
 </div>
 
-<!-- BESO DE ÁNGEL -->
-<div class="card">
-<img src="Beso de ángel de media libra.jpeg">
-<h3>Beso de Ángel</h3>
-<p>Media libra</p>
-<a href="https://wa.me/50558300624"><button>Pedir</button></a>
-</div>
-
-<!-- PASTEL RECTANGULAR -->
-<div class="card">
-<img src="Pastelrectangular.jpeg">
-<h3>Pastel Rectangular</h3>
-<p>C$1500</p>
-<a href="https://wa.me/50558300624"><button>Pedir</button></a>
-</div>
-
-<!-- PASTEL DOS PISOS -->
-<div class="card">
-<img src="Pastel de dos pisos.jpeg">
-<h3>Pastel de Dos Pisos</h3>
-<p>Consultar precio</p>
-<a href="https://wa.me/50558300624"><button>Pedir</button></a>
-</div>
-
-<!-- EMPANADAS -->
-<div class="card">
-<img src="Empanadas de pollo 1.jpeg">
-<h3>Empanadas de Pollo</h3>
-<p>Consultar precio</p>
-<a href="https://wa.me/50558300624"><button>Pedir</button></a>
-</div>
-
+<!-- COMENTARIOS -->
+<div class="comentarios">
+<h2>Opiniones de nuestros clientes</h2>
+<textarea placeholder="Escribe tu comentario..."></textarea><br><br>
+<button>Enviar</button>
+<p>⭐⭐⭐⭐⭐</p>
 </div>
 
 </body>
