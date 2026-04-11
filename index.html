@@ -20,18 +20,18 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.05;
+  opacity: 0.06;
   width: 400px;
   z-index: -1;
 }
 
-/* ENCABEZADO */
+/* TITULOS */
 h1 {
   margin-top: 30px;
   font-size: 42px;
 }
 
-p.sub {
+.sub {
   margin-bottom: 30px;
 }
 
@@ -51,19 +51,19 @@ p.sub {
   border-radius: 20px;
   padding: 15px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   border: 2px solid #D2A46C;
 }
 
+/* IMÁGENES IGUALES */
 .card img {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
   border-radius: 15px;
   margin-bottom: 15px;
 }
 
-/* BOTÓN */
+/* BOTONES */
 button {
   background: #D2A46C;
   border: none;
@@ -77,7 +77,7 @@ button:hover {
   background: #b88a55;
 }
 
-/* SECCIÓN COMENTARIOS */
+/* COMENTARIOS */
 .comentarios {
   margin: 50px 20px;
 }
@@ -102,65 +102,61 @@ textarea {
 
 <div class="contenedor">
 
-<!-- RED VELVET -->
 <div class="card">
 <img src="Red Velvet.jpeg">
 <h3>Red Velvet</h3>
-<p>Suave bizcocho de cacao con un vibrante tono rojo, relleno y cubierto con delicada crema de queso. Perfecto para celebraciones especiales.</p>
-<p><b>4oz C$600 • Media libra C$900 • 1 libra C$1400</b></p>
-<a href="https://wa.me/50558300624?text=Hola,%20quiero%20ordenar%20Red%20Velvet"><button>Pedir</button></a>
+<p>Bizcocho suave con crema de queso, perfecto para ocasiones especiales.</p>
+<p><b>C$600 / C$900 / C$1400</b></p>
+<a href="https://wa.me/50558300624?text=Hola,%20quiero%20Red%20Velvet"><button>Pedir</button></a>
 </div>
 
-<!-- TIRAMISÚ -->
 <div class="card">
 <img src="Tiramisú.jpeg">
 <h3>Tiramisú</h3>
-<p>Postre italiano con capas de bizcocho húmedo en café, crema suave y un toque de cacao que se derrite en el paladar.</p>
+<p>Capas suaves con café y crema, un clásico irresistible.</p>
 <p><b>C$70</b></p>
-<a href="https://wa.me/50558300624?text=Hola,%20quiero%20ordenar%20Tiramisu"><button>Pedir</button></a>
+<a href="https://wa.me/50558300624?text=Hola,%20quiero%20Tiramisu"><button>Pedir</button></a>
 </div>
 
-<!-- MINI PIE -->
 <div class="card">
 <img src="Pie de limón pequeño.jpeg">
 <h3>Mini Pie de Limón</h3>
-<p>Base crujiente con relleno cremoso de limón y un toque de merengue tostado que equilibra lo dulce y ácido.</p>
+<p>Fresco, cremoso y con el balance perfecto de dulce y ácido.</p>
 <p><b>C$70</b></p>
-<a href="https://wa.me/50558300624?text=Hola,%20quiero%20ordenar%20Mini%20Pie"><button>Pedir</button></a>
+<a href="https://wa.me/50558300624?text=Hola,%20quiero%20Pie%20de%20limon"><button>Pedir</button></a>
 </div>
 
-<!-- BROWNIES -->
 <div class="card">
 <img src="IMG-20260307-WA0026(1).jpg">
 <h3>Caja de Brownies</h3>
-<p>Brownies intensos de chocolate, húmedos por dentro y con toppings irresistibles. Ideales para compartir.</p>
+<p>Brownies intensos de chocolate con toppings deliciosos.</p>
 <p><b>C$650</b></p>
-<a href="https://wa.me/50558300624?text=Hola,%20quiero%20ordenar%20Brownies"><button>Pedir</button></a>
-</div>
-
-<!-- CHOCOFLAN -->
-<div class="card">
-<img src="Chocoflan.jpeg">
-<h3>Chocoflan</h3>
-<p>La mezcla perfecta entre flan cremoso y pastel de chocolate, con una capa suave de caramelo.</p>
-<p><b>C$500</b></p>
-<a href="https://wa.me/50558300624?text=Hola,%20quiero%20ordenar%20Chocoflan"><button>Pedir</button></a>
-</div>
-
-<!-- MINI CHOCOFLAN -->
-<div class="card">
-<img src="Mini chocoflan .jpeg">
-<h3>Mini Chocoflan</h3>
-<p>Versión individual del clásico chocoflan, ideal para disfrutar en cualquier momento.</p>
-<p><b>C$50</b></p>
-<a href="https://wa.me/50558300624?text=Hola,%20quiero%20ordenar%20Mini%20Chocoflan"><button>Pedir</button></a>
+<a href="https://wa.me/50558300624?text=Hola,%20quiero%20Brownies"><button>Pedir</button></a>
 </div>
 
 </div>
+
+<!-- BOTÓN WHATSAPP -->
+<a href="https://wa.me/50558300624?text=Hola,%20quiero%20información"
+target="_blank"
+style="
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: #25D366;
+color: white;
+padding: 15px 20px;
+border-radius: 50px;
+text-decoration: none;
+font-weight: bold;
+z-index: 999;
+">
+WhatsApp
+</a>
 
 <!-- COMENTARIOS -->
 <div class="comentarios">
-<h2>Opiniones de nuestros clientes</h2>
+<h2>Opiniones</h2>
 <textarea placeholder="Escribe tu comentario..."></textarea><br><br>
 <button>Enviar</button>
 <p>⭐⭐⭐⭐⭐</p>
